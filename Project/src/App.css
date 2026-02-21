@@ -1,0 +1,959 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  color: #1e1e2f;
+}
+
+/* Header */
+.header {
+  height: 80px;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2b1e63;
+  cursor: pointer;
+}
+
+.nav a {
+  margin: 0 18px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #2b1e63;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 26px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #2b1e63;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(43, 30, 99, 0.25);
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn.outline {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #2b1e63;
+}
+
+.btn.outline:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-left {
+  width: 45%;
+}
+
+.hero-left h1 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #2b1e63;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+/* Right Cards */
+.hero-right {
+  width: 45%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-card svg {
+  color: #2b1e63;
+  margin-bottom: 12px;
+}
+
+.feature-card h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(43, 30, 99, 0.18);
+}
+
+
+/* ================= ABOUT PAGE ================= */
+
+.about-page {
+  padding-top: 60px;
+  background: #ffffff;
+}
+
+/* HERO */
+.about-hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  color: #2b1e63;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* MISSION */
+.about-mission {
+  padding: 80px;
+}
+
+.mission-text {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.mission-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #2b1e63;
+}
+
+.mission-text p {
+  max-width: 800px;
+  margin: auto;
+  color: #666;
+  line-height: 1.7;
+}
+
+.mission-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.mission-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.mission-card svg {
+  color: #2b1e63;
+  margin-bottom: 15px;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(43, 30, 99, 0.18);
+}
+
+/* STATS */
+.about-stats {
+  padding: 80px;
+  display: flex;
+  justify-content: space-around;
+  background: #f9f9ff;
+}
+
+.stat h2 {
+  font-size: 36px;
+  color: #2b1e63;
+}
+
+.stat p {
+  color: #666;
+}
+
+/* CTA */
+.about-cta {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.about-cta h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #2b1e63;
+}
+
+.about-cta p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+
+/* ================= CONTACT PAGE ================= */
+
+.contact-page {
+  background: #ffffff;
+}
+
+/* HERO */
+.contact-hero {
+  padding: 100px 20px 70px;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 48px;
+  color: #2b1e63;
+  margin-bottom: 15px;
+}
+
+.contact-hero p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 18px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* CONTENT */
+.contact-content {
+  padding: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+}
+
+/* INFO CARDS */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.info-card svg {
+  color: #2b1e63;
+  margin-bottom: 10px;
+}
+
+.info-card h4 {
+  margin-bottom: 6px;
+}
+
+.info-card p {
+  color: #666;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(43, 30, 99, 0.18);
+}
+
+/* FORM */
+.contact-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 25px;
+  color: #2b1e63;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2b1e63;
+  box-shadow: 0 0 0 3px rgba(43, 30, 99, 0.1);
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #f9f9ff;
+  padding: 80px 20px 30px;
+  margin-top: 80px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+}
+
+/* BRAND */
+.footer-brand h2 {
+  color: #2b1e63;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* LINKS */
+.footer-links h4,
+.footer-social h4 {
+  margin-bottom: 15px;
+  color: #2b1e63;
+}
+
+.footer-links a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #2b1e63;
+  transform: translateX(4px);
+}
+
+/* SOCIAL */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2b1e63;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(43, 30, 99, 0.25);
+}
+
+/* BOTTOM */
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: #777;
+  font-size: 14px;
+}
+
+
+/* ================= REVIEWS PAGE ================= */
+
+.reviews-page {
+  padding: 80px;
+  background: #ffffff;
+}
+
+.reviews-title {
+  text-align: center;
+  font-size: 42px;
+  color: #2b1e63;
+  margin-bottom: 50px;
+}
+
+.reviews-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.review-card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(43, 30, 99, 0.18);
+}
+
+.review-body {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-user h4 {
+  font-size: 15px;
+  margin-bottom: 3px;
+  color: #2b1e63;
+}
+
+.review-user span {
+  font-size: 13px;
+  color: #777;
+}
+
+.review-likes {
+  font-weight: 600;
+  color: #e63946;
+}
+
+
+/* FOOD PAGE */
+.food-page {
+  padding: 80px 10%;
+  min-height: 100vh;
+  background: #f9f9ff;
+}
+
+.food-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.food-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(43, 30, 99, 0.18);
+}
+
+.food-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.food-content {
+  padding: 20px;
+}
+
+.food-content h3 {
+  margin-bottom: 8px;
+}
+
+.food-cuisine {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.food-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.food-calories {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+/* SMALL BUTTON */
+.btn.small {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+
+/* =====================================
+   FOOD DETAIL PAGE (Premium UI)
+===================================== */
+
+.food-detail-page {
+  padding: 80px 8%;
+  background: linear-gradient(180deg, #f4f6ff 0%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+/* -------------------------------------
+   MAIN CARD
+------------------------------------- */
+.food-detail-card {
+  max-width: 1050px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+/* -------------------------------------
+   IMAGE SECTION (Reduced Height)
+------------------------------------- */
+.food-detail-card img {
+  width: 100%;
+  height: 360px; /* 👈 reduced from 500px */
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+/* -------------------------------------
+   CONTENT SECTION
+------------------------------------- */
+.food-detail-content {
+  padding: 45px 55px;
+}
+
+/* -------------------------------------
+   TITLE
+------------------------------------- */
+.food-detail-content h1 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #2b1e63;
+  margin-bottom: 12px;
+}
+
+/* -------------------------------------
+   META INFORMATION
+------------------------------------- */
+.detail-meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.detail-time,
+.detail-calories {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+/* -------------------------------------
+   SECTION HEADINGS
+------------------------------------- */
+.food-detail-content h3 {
+  margin-top: 32px;
+  margin-bottom: 14px;
+  font-size: 20px;
+  color: #2b1e63;
+  position: relative;
+  padding-left: 12px;
+}
+
+.food-detail-content h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  height: 80%;
+  width: 4px;
+  background: #2b1e63;
+  border-radius: 2px;
+}
+
+/* -------------------------------------
+   LISTS (Ingredients & Instructions)
+------------------------------------- */
+.food-detail-content ul,
+.food-detail-content ol {
+  padding-left: 22px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.food-detail-content li {
+  margin-bottom: 8px;
+}
+
+/* -------------------------------------
+   EXTRA INFO
+------------------------------------- */
+.detail-extra {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* -------------------------------------
+   TAG BADGES
+------------------------------------- */
+.badge {
+  display: inline-block;
+  background: #eef0ff;
+  color: #2b1e63;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 6px 6px 0 0;
+}
+
+/* -------------------------------------
+   BACK BUTTON
+------------------------------------- */
+.food-detail-page .btn.outline {
+  margin-bottom: 30px;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+@media (max-width: 768px) {
+  .food-detail-page {
+    padding: 60px 5%;
+  }
+
+  .food-detail-card img {
+    height: 260px;
+  }
+
+  .food-detail-content {
+    padding: 28px 24px;
+  }
+
+  .food-detail-content h1 {
+    font-size: 26px;
+  }
+}
+
+/* =====================================
+   CUSTOMER PAGE DESIGN
+===================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f4f6ff;
+  color: #1e1e2f;
+}
+
+/* PAGE */
+.customer-page {
+  padding: 80px 8%;
+}
+
+.customer-title {
+  text-align: center;
+  font-size: 42px;
+  color: #2b1e63;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.customer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 35px;
+}
+
+/* CARD */
+.customer-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.customer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 70px rgba(43, 30, 99, 0.2);
+}
+
+/* HEADER */
+.customer-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.customer-header img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #eef0ff;
+}
+
+.customer-header h2 {
+  font-size: 20px;
+  color: #2b1e63;
+}
+
+.role {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #2b1e63;
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-top: 6px;
+}
+
+/* SECTIONS */
+.customer-section {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #eee;
+}
+
+.customer-section h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #2b1e63;
+}
+
+.customer-section p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.wallet {
+  font-size: 12px;
+  word-break: break-all;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .customer-page {
+    padding: 60px 5%;
+  }
+
+  .customer-title {
+    font-size: 32px;
+  }
+}
+
+
+/* ================= PRODUCT PAGE ================= */
+
+.product-page {
+  padding: 80px 8%;
+  background: #f4f6ff;
+  min-height: 100vh;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 42px;
+  color: #2b1e63;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+/* CARD */
+.product-card {
+  background: #fff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 70px rgba(43, 30, 99, 0.2);
+}
+
+/* IMAGE */
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: #f8f8f8;
+  padding: 15px;
+}
+
+/* CONTENT */
+.product-content {
+  padding: 22px;
+}
+
+.category {
+  font-size: 12px;
+  font-weight: 600;
+  background: #eef0ff;
+  color: #2b1e63;
+  padding: 5px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.product-content h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #2b1e63;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* META */
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: 700;
+  color: #2b1e63;
+}
+
+.rating {
+  font-weight: 600;
+  color: #f4a261;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .product-page {
+    padding: 60px 5%;
+  }
+
+  .product-title {
+    font-size: 32px;
+  }
+}
