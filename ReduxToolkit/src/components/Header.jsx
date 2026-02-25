@@ -10,6 +10,8 @@ function Header() {
     >
       <NavLink to="/"><b>Counter</b></NavLink>
       {" | "}
+      <NavLink to="/product"><b>Product</b></NavLink>
+      {" | "}
       <NavLink to="/signup"><b>Singup</b></NavLink>
       {" | "}
       <NavLink to="/login"><b>Login</b></NavLink>

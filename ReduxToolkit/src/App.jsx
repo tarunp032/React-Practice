@@ -5,6 +5,7 @@ import { Counter } from "./components/Counter";
 import Header from "./components/Header";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import Product from "./components/Product";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
     <Route path="/" element={<Counter/>}/>
     <Route path="/signup" element={<Signup/>}/>
     <Route path="/login" element={<Login/>}/>
+    <Route path="/product" element={<Product/>}/>
     </Routes> 
     </BrowserRouter>
   );
