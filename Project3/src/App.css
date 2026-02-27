@@ -9,7 +9,7 @@ body {
 }
 
 body.light {
-  background: #f4f6f9;
+  background: oklch(70.5% 0.015 286.067);
   color: #222;
 }
 
@@ -154,7 +154,7 @@ body.dark {
 }
 
 .product-card {
-  background: white;
+  background: oklch(92.9% 0.013 255.508);
   padding: 20px;
   border-radius: 18px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
@@ -206,7 +206,7 @@ body.dark .product-card {
   grid-template-columns: 120px 1fr 150px 160px 160px 150px;
   align-items: center;
   gap: 20px;
-  background: white;
+  background: oklch(92.9% 0.013 255.508);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
